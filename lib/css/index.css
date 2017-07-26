@@ -1,0 +1,172 @@
+.terminal-top-bar {
+  height: 30px;
+  max-width: 600px;
+  transition: all 0.4s ease-out;
+  background: black;
+  display: block;
+  margin: 0 auto; }
+  .terminal-top-bar circle {
+    cursor: pointer; }
+
+.terminal-tab-bar {
+  height: 30px;
+  max-width: 600px;
+  transition: all 0.4s ease-out;
+  background: #222;
+  display: flex;
+  margin: 0 auto; }
+
+.terminal-tab {
+  display: inline-block;
+  vertical-align: top;
+  height: 30px;
+  background-color: #333;
+  border-bottom: 2px solid #333;
+  text-align: center;
+  line-height: 30px;
+  width: 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 3px;
+  padding-right: 3px;
+  cursor: pointer;
+  white-space: pre;
+  position: relative; }
+
+.terminal-tab-active {
+  border-bottom-color: #777; }
+
+.terminal-tab:focus {
+  outline: none; }
+
+.terminal-tab-close {
+  position: absolute;
+  top: 8px;
+  height: 13px;
+  line-height: 11px;
+  right: 3px;
+  font-size: 11px;
+  width: 13px;
+  text-align: center;
+  color: black;
+  cursor: pointer; }
+  .terminal-tab-close:hover {
+    color: white;
+    background-color: black;
+    border-radius: 50%; }
+
+.terminal-tab-plus {
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  width: 13px;
+  height: 13px;
+  line-height: 13px;
+  margin-left: 5px;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.terminal-tab-plus-visible {
+  opacity: 0.7; }
+
+.terminal-tab-bar-empty {
+  display: inline-block;
+  min-width: 25px;
+  height: 100%;
+  flex: 1; }
+
+.terminal-base {
+  width: 100%;
+  max-width: 600px;
+  height: 630px;
+  max-height: 100vh;
+  text-align: initial; }
+
+.terminal-container-wrapper {
+  height: 100%;
+  animation: fadeIn 0.18s ease-in; }
+
+.terminal-container-wrapper,
+.terminal-output-line {
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.9em;
+  color: green; }
+
+.terminal-container {
+  display: block;
+  margin: 0 auto; }
+
+.terminal-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: terminalFadeIn 0.3s ease-in; }
+
+.terminal-note > img:focus {
+  outline: none; }
+
+@keyframes terminalFadeIn {
+  0% {
+    opacity: 0; }
+  60% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+.terminal-input-area {
+  height: 100%;
+  padding: 3px; }
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.terminal-main-input {
+  font-size: 0.9em; }
+
+.terminal-container-main {
+  max-width: 600px;
+  transition: all 0.4s ease-out;
+  background: black;
+  max-height: 600px;
+  height: 100%;
+  overflow: scroll; }
+
+.terminal-holder {
+  overflow: auto; }
+
+.terminal-prompt {
+  color: green; }
+
+.terminal-main-input, .terminal-main-input:focus {
+  border: none;
+  padding: 0;
+  margin: 3px;
+  background: black;
+  color: green;
+  flex: 1;
+  outline: none; }
+
+.terminal-output-line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  color: inherit; }
+
+.terminal-output-line > pre {
+  background-color: transparent !important; }
+
+.terminal-content {
+  padding: 5px 20px;
+  height: 100%; }
+
+/*# sourceMappingURL=index.css.map */

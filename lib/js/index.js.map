@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/js/index.js"],"names":["PluginBase"],"mappings":"2fAMEA,U","file":"index.js","sourcesContent":["import Terminal from './components/Terminal';\nimport PluginBase from './components/Plugin';\n\nexport default Terminal;\n\nexport {\n  PluginBase,\n};\n"]}

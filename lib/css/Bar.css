@@ -1,0 +1,11 @@
+.terminal-top-bar {
+  height: 30px;
+  max-width: 600px;
+  transition: all 0.4s ease-out;
+  background: black;
+  display: block;
+  margin: 0 auto; }
+  .terminal-top-bar circle {
+    cursor: pointer; }
+
+/*# sourceMappingURL=Bar.css.map */
